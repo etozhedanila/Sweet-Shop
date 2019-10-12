@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sA0-0J-jZE">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Меню-->
+        <scene sceneID="hwU-TK-EFZ">
+            <objects>
+                <tableViewController id="ric-hD-lPq" customClass="MenuTableViewController" customModule="Sweet_Shop" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="JyN-FN-baA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="menuCell" id="2jG-0I-kyd" customClass="MenuTableViewCell" customModule="Sweet_Shop" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2jG-0I-kyd" id="B8u-gA-39t">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ric-hD-lPq" id="yfX-Al-MOq"/>
+                            <outlet property="delegate" destination="ric-hD-lPq" id="QN6-yf-NQn"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Меню" id="Va2-bQ-RsF"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FfM-tM-tMW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2110" y="-779"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="9I1-lr-L3c">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="sA0-0J-jZE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hsL-ci-oXj">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="rRv-qj-sLS" kind="relationship" relationship="viewControllers" id="4SG-Fl-9A2"/>
+                        <segue destination="ENI-D9-eNa" kind="relationship" relationship="viewControllers" id="fjh-AH-Tgl"/>
+                        <segue destination="YOr-5H-SFu" kind="relationship" relationship="viewControllers" id="qcl-st-czc"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A0G-Al-wVj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-439" y="116"/>
+        </scene>
+        <!--Cart Table View Controller-->
+        <scene sceneID="NcO-Rp-jaY">
+            <objects>
+                <tableViewController storyboardIdentifier="cartTableViewController" id="GXw-8B-qjL" customClass="CartTableViewController" customModule="Sweet_Shop" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="kdS-Ds-rcM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <button key="tableHeaderView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="yhe-iU-vKH">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="69"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.95523184539999995" green="0.77367548890000004" blue="0.24424678250000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <state key="normal" title="Оформить заказ">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="placeOrderButtonTapped:" destination="GXw-8B-qjL" eventType="touchUpInside" id="Rwj-MD-SgT"/>
+                            </connections>
+                        </button>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cartCell" id="FDY-HO-dOf" customClass="CartTableViewCell" customModule="Sweet_Shop" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="97" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FDY-HO-dOf" id="omc-tX-jCu">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="GXw-8B-qjL" id="c7v-tj-I90"/>
+                            <outlet property="delegate" destination="GXw-8B-qjL" id="E9S-0y-8Vi"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Epl-xE-VQT"/>
+                    <connections>
+                        <outlet property="placeOrderButton" destination="yhe-iU-vKH" id="enS-6N-bH1"/>
+                        <segue destination="TaC-Jt-e89" kind="show" identifier="showOrderVC" id="doS-WH-EcB"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y2N-OA-Fj5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2109.5999999999999" y="116.49175412293854"/>
+        </scene>
+        <!--Order View Controller-->
+        <scene sceneID="q83-O6-qHz">
+            <objects>
+                <viewController id="TaC-Jt-e89" customClass="OrderViewController" customModule="Sweet_Shop" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rsR-AH-TME">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="ilj-XY-Qyt"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nhJ-vc-WBN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2999" y="116"/>
+        </scene>
+        <!--Menu-->
+        <scene sceneID="2jz-HY-Hwp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" hidesBarsOnSwipe="YES" id="rRv-qj-sLS" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Menu" image="menuItem" selectedImage="menuItem" id="NTd-MJ-abr"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" id="iiA-0g-Wng">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2eL-c5-M5t">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="ric-hD-lPq" kind="relationship" relationship="rootViewController" id="hfE-rM-BWx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ob4-iY-BWX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1082" y="-779"/>
+        </scene>
+        <!--About Us Table View Controller-->
+        <scene sceneID="yvi-fY-0Rj">
+            <objects>
+                <tableViewController id="5Mb-Sy-IkF" customClass="AboutUsTableViewController" customModule="Sweet_Shop" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="s9k-Ks-9zj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <imageView key="tableHeaderView" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cake" id="cxm-4o-eub">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="275"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="aboutUsCell" id="SkD-o2-cVf">
+                                <rect key="frame" x="0.0" y="303" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SkD-o2-cVf" id="jmM-hT-TkH">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="5Mb-Sy-IkF" id="Ku8-vL-zxQ"/>
+                            <outlet property="delegate" destination="5Mb-Sy-IkF" id="BUS-6N-DEK"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="I3o-xj-fBp"/>
+                    <connections>
+                        <segue destination="yfh-AS-kom" kind="show" identifier="aboutSegue" id="tRl-MR-YY8"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TdD-Yl-skn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2109.5999999999999" y="900.89955022488766"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="wjz-yn-vUx">
+            <objects>
+                <viewController id="yfh-AS-kom" customClass="WebViewController" customModule="Sweet_Shop" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sud-nt-lLh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="EOB-I1-vL2"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KeZ-08-mnm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3018" y="900"/>
+        </scene>
+        <!--Cart-->
+        <scene sceneID="Heu-By-ibD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ENI-D9-eNa" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Cart" image="cart" id="4RH-Zy-y8x"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vQJ-c2-Nhe">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="GXw-8B-qjL" kind="relationship" relationship="rootViewController" id="YXF-9W-lON"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6ge-sK-oBW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1081" y="116"/>
+        </scene>
+        <!--About us-->
+        <scene sceneID="MeE-Fu-Wh1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YOr-5H-SFu" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="About us" image="aboutUsItem" id="3Ao-Ym-Yjp"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Wkn-QA-8YS">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="5Mb-Sy-IkF" kind="relationship" relationship="rootViewController" id="axV-gV-ndQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R98-7Q-4rC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1081" y="899"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Cake" width="128" height="128"/>
+        <image name="aboutUsItem" width="25" height="25"/>
+        <image name="cart" width="32" height="32"/>
+        <image name="menuItem" width="24" height="24"/>
+    </resources>
+</document>

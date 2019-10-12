@@ -1,0 +1,428 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F677C5222251FB89005EA11D /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F677C5212251FB89005EA11D /* OrderViewController.swift */; };
+		F683CAD2224E841C0057817A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F683CAD1224E841C0057817A /* AppDelegate.swift */; };
+		F683CAD7224E841C0057817A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F683CAD5224E841C0057817A /* Main.storyboard */; };
+		F683CAD9224E841D0057817A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F683CAD8224E841D0057817A /* Assets.xcassets */; };
+		F683CADC224E841D0057817A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F683CADA224E841D0057817A /* LaunchScreen.storyboard */; };
+		F683CAE8224E85560057817A /* CakeCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F683CAE7224E85560057817A /* CakeCollectionView.swift */; };
+		F683CAEE224E87F70057817A /* CakeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F683CAED224E87F70057817A /* CakeCollectionViewCell.swift */; };
+		F683CAF2224E8AF70057817A /* SweetShopModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F683CAF1224E8AF70057817A /* SweetShopModel.swift */; };
+		F683CAF6224E90E50057817A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F683CAF5224E90E50057817A /* Constants.swift */; };
+		F683CAF9224F57370057817A /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F683CAF8224F57370057817A /* MenuTableViewController.swift */; };
+		F683CAFB224F62130057817A /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F683CAFA224F62130057817A /* MenuTableViewCell.swift */; };
+		F683CB00224FCDCA0057817A /* AboutUsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F683CAFF224FCDCA0057817A /* AboutUsTableViewController.swift */; };
+		F683CB02224FCE1B0057817A /* CartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F683CB01224FCE1B0057817A /* CartTableViewController.swift */; };
+		F683CB04224FD1CC0057817A /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F683CB03224FD1CC0057817A /* WebViewController.swift */; };
+		F683CB062250AD440057817A /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F683CB052250AD440057817A /* CartTableViewCell.swift */; };
+		F683CB0A22514AC90057817A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F683CB0922514AC90057817A /* DetailViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F677C5212251FB89005EA11D /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		F683CACE224E841C0057817A /* Sweet Shop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sweet Shop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F683CAD1224E841C0057817A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F683CAD6224E841C0057817A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F683CAD8224E841D0057817A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F683CADB224E841D0057817A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F683CADD224E841D0057817A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F683CAE7224E85560057817A /* CakeCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeCollectionView.swift; sourceTree = "<group>"; };
+		F683CAED224E87F70057817A /* CakeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeCollectionViewCell.swift; sourceTree = "<group>"; };
+		F683CAF1224E8AF70057817A /* SweetShopModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SweetShopModel.swift; sourceTree = "<group>"; };
+		F683CAF5224E90E50057817A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F683CAF8224F57370057817A /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		F683CAFA224F62130057817A /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		F683CAFF224FCDCA0057817A /* AboutUsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsTableViewController.swift; sourceTree = "<group>"; };
+		F683CB01224FCE1B0057817A /* CartTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewController.swift; sourceTree = "<group>"; };
+		F683CB03224FD1CC0057817A /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		F683CB052250AD440057817A /* CartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
+		F683CB0922514AC90057817A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F683CACB224E841C0057817A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F683CAC5224E841C0057817A = {
+			isa = PBXGroup;
+			children = (
+				F683CAD0224E841C0057817A /* Sweet Shop */,
+				F683CACF224E841C0057817A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F683CACF224E841C0057817A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F683CACE224E841C0057817A /* Sweet Shop.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F683CAD0224E841C0057817A /* Sweet Shop */ = {
+			isa = PBXGroup;
+			children = (
+				F683CAD1224E841C0057817A /* AppDelegate.swift */,
+				F683CB0922514AC90057817A /* DetailViewController.swift */,
+				F683CB08225111000057817A /* AboutUs */,
+				F683CB0722510C7A0057817A /* Cart */,
+				F683CAFE224F8E260057817A /* MenuViewController */,
+				F683CAF0224E881F0057817A /* CakeCollectionView */,
+				F683CAF7224E90FB0057817A /* Model */,
+				F683CAD5224E841C0057817A /* Main.storyboard */,
+				F683CAD8224E841D0057817A /* Assets.xcassets */,
+				F683CADA224E841D0057817A /* LaunchScreen.storyboard */,
+				F683CADD224E841D0057817A /* Info.plist */,
+			);
+			path = "Sweet Shop";
+			sourceTree = "<group>";
+		};
+		F683CAF0224E881F0057817A /* CakeCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				F683CAE7224E85560057817A /* CakeCollectionView.swift */,
+				F683CAED224E87F70057817A /* CakeCollectionViewCell.swift */,
+			);
+			path = CakeCollectionView;
+			sourceTree = "<group>";
+		};
+		F683CAF7224E90FB0057817A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F683CAF1224E8AF70057817A /* SweetShopModel.swift */,
+				F683CAF5224E90E50057817A /* Constants.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F683CAFE224F8E260057817A /* MenuViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F683CAF8224F57370057817A /* MenuTableViewController.swift */,
+				F683CAFA224F62130057817A /* MenuTableViewCell.swift */,
+			);
+			path = MenuViewController;
+			sourceTree = "<group>";
+		};
+		F683CB0722510C7A0057817A /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				F683CB01224FCE1B0057817A /* CartTableViewController.swift */,
+				F683CB052250AD440057817A /* CartTableViewCell.swift */,
+				F677C5212251FB89005EA11D /* OrderViewController.swift */,
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
+		F683CB08225111000057817A /* AboutUs */ = {
+			isa = PBXGroup;
+			children = (
+				F683CAFF224FCDCA0057817A /* AboutUsTableViewController.swift */,
+				F683CB03224FD1CC0057817A /* WebViewController.swift */,
+			);
+			path = AboutUs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F683CACD224E841C0057817A /* Sweet Shop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F683CAE0224E841D0057817A /* Build configuration list for PBXNativeTarget "Sweet Shop" */;
+			buildPhases = (
+				F683CACA224E841C0057817A /* Sources */,
+				F683CACB224E841C0057817A /* Frameworks */,
+				F683CACC224E841C0057817A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Sweet Shop";
+			productName = "Sweet Shop";
+			productReference = F683CACE224E841C0057817A /* Sweet Shop.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F683CAC6224E841C0057817A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Виталий Субботин";
+				TargetAttributes = {
+					F683CACD224E841C0057817A = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1030;
+					};
+				};
+			};
+			buildConfigurationList = F683CAC9224E841C0057817A /* Build configuration list for PBXProject "Sweet Shop" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F683CAC5224E841C0057817A;
+			productRefGroup = F683CACF224E841C0057817A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F683CACD224E841C0057817A /* Sweet Shop */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F683CACC224E841C0057817A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F683CADC224E841D0057817A /* LaunchScreen.storyboard in Resources */,
+				F683CAD9224E841D0057817A /* Assets.xcassets in Resources */,
+				F683CAD7224E841C0057817A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F683CACA224E841C0057817A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F683CAF9224F57370057817A /* MenuTableViewController.swift in Sources */,
+				F683CAD2224E841C0057817A /* AppDelegate.swift in Sources */,
+				F677C5222251FB89005EA11D /* OrderViewController.swift in Sources */,
+				F683CB00224FCDCA0057817A /* AboutUsTableViewController.swift in Sources */,
+				F683CB0A22514AC90057817A /* DetailViewController.swift in Sources */,
+				F683CB04224FD1CC0057817A /* WebViewController.swift in Sources */,
+				F683CAE8224E85560057817A /* CakeCollectionView.swift in Sources */,
+				F683CB062250AD440057817A /* CartTableViewCell.swift in Sources */,
+				F683CAF2224E8AF70057817A /* SweetShopModel.swift in Sources */,
+				F683CAEE224E87F70057817A /* CakeCollectionViewCell.swift in Sources */,
+				F683CAF6224E90E50057817A /* Constants.swift in Sources */,
+				F683CB02224FCE1B0057817A /* CartTableViewController.swift in Sources */,
+				F683CAFB224F62130057817A /* MenuTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F683CAD5224E841C0057817A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F683CAD6224E841C0057817A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F683CADA224E841D0057817A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F683CADB224E841D0057817A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F683CADE224E841D0057817A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F683CADF224E841D0057817A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F683CAE1224E841D0057817A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PAJM5Y54LW;
+				INFOPLIST_FILE = "Sweet Shop/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "vsdev.Sweet-Shop";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F683CAE2224E841D0057817A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PAJM5Y54LW;
+				INFOPLIST_FILE = "Sweet Shop/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "vsdev.Sweet-Shop";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F683CAC9224E841C0057817A /* Build configuration list for PBXProject "Sweet Shop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F683CADE224E841D0057817A /* Debug */,
+				F683CADF224E841D0057817A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F683CAE0224E841D0057817A /* Build configuration list for PBXNativeTarget "Sweet Shop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F683CAE1224E841D0057817A /* Debug */,
+				F683CAE2224E841D0057817A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F683CAC6224E841C0057817A /* Project object */;
+}
